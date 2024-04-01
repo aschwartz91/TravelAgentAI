@@ -1,67 +1,73 @@
-@font-face {
-  font-family: "ColfaxAI";
-  src: url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff2)
-      format("woff2"),
-    url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff) format("woff");
-  font-weight: normal;
-  font-style: normal;
+
+ /*found this online, wanted to add a cool background
+ the next two blocks are sourced from codepen.io background generator*/
+ .main {
+	background: linear-gradient(-45deg, #0037ea, #b5b5b5, #ff3030);
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+	height: 200vh;
 }
-@font-face {
-  font-family: "ColfaxAI";
-  src: url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff2) format("woff2"),
-    url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff) format("woff");
-  font-weight: bold;
-  font-style: normal;
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
-.main,
-.main input {
+
+.main, .main input {
   font-size: 16px;
   line-height: 24px;
   color: #353740;
-  font-family: "ColfaxAI", Helvetica, sans-serif;
+  font-family: Garamond, sans-serif;
 }
 .main {
-  display: flex;
   flex-direction: column;
   align-items: center;
+  display: flex;
   padding-top: 60px;
 }
-.main .icon {
-  width: 34px;
-}
+
 .main h3 {
-  font-size: 32px;
+  font-size: 38px;
   line-height: 40px;
   font-weight: bold;
   color: #202123;
-  margin: 16px 0 40px;
+  margin: 16px 0 10px;
 }
+
+.main .icon {
+  width: 50px;
+}
+
 .main form {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  width: 300px;
 }
-.main input[type="text"] {
+.main input[type = "text"] {
   padding: 12px 16px;
-  border: 1px solid #10a37f;
+  border: 1px solid #103aa3;
   border-radius: 4px;
   margin-bottom: 24px;
-  outline-color: #10a37f;
+  margin-top: 10px;
+  outline-color: #103aa3;
 }
-.main ::placeholder {
-  color: #8e8ea0;
-  opacity: 1;
-}
-.main input[type="submit"] {
-  padding: 12px 0;
+
+.main input[type = "submit"] {
+  padding: 12px ;
   color: #fff;
-  background-color: #10a37f;
-  border: none;
-  border-radius: 4px;
+  background-color: #103aa3;
+  border-radius: 20px;
   text-align: center;
-  cursor: pointer;
 }
 .main .result {
-  font-weight: bold;
   margin-top: 40px;
+  width: 70%;
+  font-style: italic;
 }
